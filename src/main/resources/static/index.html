@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroMonos - Garbage Collection Request</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4eea68 0%, #4b91a2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .success-checkmark {
+            animation: scaleIn 0.5s ease;
+        }
+        @keyframes scaleIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+        .loading-spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #0f863d;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="gradient-bg shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-recycle text-white text-3xl"></i>
+                    <h1 class="text-white text-2xl font-bold">ZeroMonos</h1>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-white font-semibold px-4 py-2 rounded-lg bg-white bg-opacity-20 hover:bg-opacity-30 transition">
+                        <i class="fas fa-user mr-2"></i>Citizen
+                    </a>
+                    <a href="staff.html" class="text-white font-semibold px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition">
+                        <i class="fas fa-user-tie mr-2"></i>Staff
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Request Garbage Collection</h2>
+            <p class="text-lg text-gray-100">Schedule your waste collection service easily and quickly</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-2xl mx-auto">
+            
+            <!-- Token Lookup Card -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 card-hover mb-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-search text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Check Your Request</h3>
+                </div>
+
+                <div class="flex gap-4">
+                    <input type="text" id="tokenLookup" placeholder="Enter your booking token"
+                        class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                    <button id="searchTokenButton" onclick="lookupToken()" 
+                        class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition">
+                        <i class="fas fa-search mr-2"></i>Search
+                    </button>
+                </div>
+            </div>
+            <!-- Request Form Card -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="bg-purple-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-trash-alt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">New Collection Request</h3>
+                </div>
+
+                <form id="requestForm" class="space-y-6">
+                    <!-- Municipality -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-map-marker-alt text-purple-600 mr-2"></i>Municipality *
+                        </label>
+                        <select id="municipality" required
+                            class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition">
+                            <option value="">Loading municipalities...</option>
+                        </select>
+                    </div>
+
+                    <!-- Address -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-home text-purple-600 mr-2"></i>Address *
+                        </label>
+                        <input type="text" id="address" required placeholder="Enter your full address"
+                            class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition">
+                    </div>
+
+                    <!-- Time Slot -->
+                    <div>
+                        <label for="timeSlotDate" class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-calendar-alt text-purple-600 mr-2"></i>Preferred Date *
+                        </label>
+                        <input type="date" id="timeSlotDate" required
+                            class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition">
+                    </div>
+
+                    <div id="timeSlotsContainer" class="hidden">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-clock text-purple-600 mr-2"></i>Available Time Slots *
+                        </label>
+                        <div id="timeSlotsList" class="grid grid-cols-3 gap-3">
+                            <!-- Time slots will be inserted here -->
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">Select an available time slot (booked slots are disabled)</p>
+                    </div>
+
+                    <!-- Item Description -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-box text-purple-600 mr-2"></i>Item Description *
+                        </label>
+                        <textarea id="itemDescription" required rows="4" placeholder="Describe the items to be collected..."
+                            class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="submitBtn"
+                        class="w-full gradient-bg text-white font-bold py-4 px-6 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-paper-plane mr-2"></i>Submit Request
+                    </button>
+                </form>
+            </div>
+
+            <!-- Success Message (Hidden by default) -->
+            <div id="successMessage" class="hidden mt-8 bg-green-50 border-2 border-green-500 rounded-2xl p-8 text-center card-hover">
+                <div class="success-checkmark mb-4">
+                    <i class="fas fa-check-circle text-green-500 text-6xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-green-800 mb-2">Request Submitted Successfully!</h3>
+                <p class="text-gray-700 mb-4">Your booking token:</p>
+                <div class="bg-white border-2 border-green-300 rounded-lg p-4 mb-4">
+                    <code id="bookingToken" class="text-lg font-mono text-purple-600"></code>
+                </div>
+                <p class="text-sm text-gray-600 mb-4">Please save this token for future reference</p>
+                <button onclick="resetForm()" class="gradient-bg text-white font-semibold py-3 px-8 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-plus mr-2"></i>Make Another Request
+                </button>
+            </div>
+
+            <!-- Success Modal (for Selenium tests) -->
+            <div id="successModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+                <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 p-8 text-center">
+                    <div class="success-checkmark mb-4">
+                        <i class="fas fa-check-circle text-green-500 text-6xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-green-800 mb-2">Request Submitted Successfully!</h3>
+                    <p class="text-gray-700 mb-4">Your booking token:</p>
+                    <div class="bg-white border-2 border-green-300 rounded-lg p-4 mb-4">
+                        <code id="bookingTokenModal" class="text-lg font-mono text-purple-600"></code>
+                    </div>
+                    <button onclick="closeSuccessModal()" class="gradient-bg text-white font-semibold py-3 px-8 rounded-lg hover:shadow-lg transition">
+                        <i class="fas fa-check mr-2"></i>Close
+                    </button>
+                </div>
+            </div>
+
+            <!-- Error Message (Hidden by default) -->
+            <div id="errorMessage" class="hidden mt-8 bg-red-50 border-2 border-red-500 rounded-2xl p-8 text-center">
+                <i class="fas fa-exclamation-triangle text-red-500 text-6xl mb-4"></i>
+                <h3 class="text-2xl font-bold text-red-800 mb-2">Error</h3>
+                <p id="errorText" class="text-gray-700"></p>
+                <button onclick="hideError()" class="mt-4 bg-red-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-600 transition">
+                    Try Again
+                </button>
+            </div>
+
+            <!-- Error Modal (for Selenium tests) -->
+            <div id="errorModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+                <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 p-8 text-center">
+                    <i class="fas fa-exclamation-triangle text-red-500 text-6xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-red-800 mb-2">Error</h3>
+                    <p id="errorModalText" class="text-gray-700 mb-4"></p>
+                    <button onclick="closeErrorModal()" class="bg-red-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-600 transition">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-8 text-center">
+            <div class="loading-spinner mx-auto mb-4"></div>
+            <p class="text-gray-700 font-semibold">Processing your request...</p>
+        </div>
+    </div>
+
+    <!-- Token Lookup Result Modal -->
+    <div id="tokenResultModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8">
+            <div class="flex justify-between items-start mb-6">
+                <h3 class="text-2xl font-bold text-gray-800">
+                    <i class="fas fa-info-circle text-blue-600 mr-2"></i>Your Request Details
+                </h3>
+                <button onclick="closeTokenModal()" class="text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="tokenResultContent" class="space-y-4">
+                <!-- Content will be inserted by JavaScript -->
+            </div>
+
+            <div class="mt-6 flex space-x-4">
+                <button onclick="closeTokenModal()" 
+                    class="flex-1 bg-gray-200 text-gray-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition">
+                    Close
+                </button>
+                <button id="editRequestBtn" onclick="openEditModal()" 
+                    class="flex-1 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition">
+                    <i class="fas fa-edit mr-2"></i>Edit Request
+                </button>
+                <button id="deleteRequestBtn" onclick="confirmDeleteRequest()" 
+                    class="flex-1 bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition">
+                    <i class="fas fa-trash mr-2"></i>Delete
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alias for detailsModal (for tests) -->
+    <div id="detailsModal" style="display: none;"></div>
+
+    <!-- Edit Request Modal -->
+    <div id="editRequestModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-start mb-6">
+                <h3 class="text-2xl font-bold text-gray-800">
+                    <i class="fas fa-edit text-purple-600 mr-2"></i>Edit Your Request
+                </h3>
+                <button onclick="closeEditModal()" class="text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            
+            <form id="editForm" class="space-y-6">
+                <!-- Municipality (read-only) -->
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        <i class="fas fa-map-marker-alt text-purple-600 mr-2"></i>Municipality
+                    </label>
+                    <input type="text" id="editMunicipality" readonly
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg bg-gray-50">
+                </div>
+
+                <!-- Address -->
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        <i class="fas fa-home text-purple-600 mr-2"></i>Address *
+                    </label>
+                    <input type="text" id="editAddress" required placeholder="Enter your full address"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition">
+                </div>
+
+                <!-- Date Picker -->
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        <i class="fas fa-calendar-alt text-purple-600 mr-2"></i>Select Date *
+                    </label>
+                    <input type="date" id="editDatePicker" required
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition">
+                </div>
+
+                <!-- Time Slots -->
+                <div id="editTimeSlotsSection" class="hidden">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        <i class="fas fa-clock text-purple-600 mr-2"></i>Select Time Slot *
+                    </label>
+                    <div id="editTimeSlotsList" class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        <!-- Time slots will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Item Description -->
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        <i class="fas fa-box text-purple-600 mr-2"></i>Item Description *
+                    </label>
+                    <textarea id="editItemDescription" required rows="4" placeholder="Describe the items to be collected..."
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition resize-none"></textarea>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex space-x-4">
+                    <button type="button" onclick="closeEditModal()" 
+                        class="flex-1 bg-gray-200 text-gray-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition">
+                        Cancel
+                    </button>
+                    <button type="submit" 
+                        class="flex-1 gradient-bg text-white font-bold py-3 px-6 rounded-lg hover:shadow-lg transition">
+                        <i class="fas fa-save mr-2"></i>Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteConfirmModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 p-8">
+            <div class="text-center mb-6">
+                <i class="fas fa-exclamation-triangle text-red-500 text-6xl mb-4"></i>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Confirm Deletion</h3>
+                <p class="text-gray-600">Are you sure you want to delete this request? This action cannot be undone.</p>
+            </div>
+            
+            <div class="flex space-x-4">
+                <button onclick="closeDeleteModal()" 
+                    class="flex-1 bg-gray-200 text-gray-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition">
+                    Cancel
+                </button>
+                <button onclick="executeDelete()" 
+                    class="flex-1 bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition">
+                    <i class="fas fa-trash mr-2"></i>Delete
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/citizen.js"></script>
+</body>
+</html>

@@ -1,0 +1,778 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< tqs.samuelvinhas:HW1 >------------------------
+[INFO] Building HW1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.7:run (default-cli) > test-compile @ HW1 >>>
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (default) @ HW1 ---
+[INFO] argLine set to -javaagent:/home/samuel/.m2/repository/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14-runtime.jar=destfile=/home/samuel/UA/TQS/tqs-indiv-portfolio-samuelvinhas/HW1/backend/HW1/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ HW1 ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ HW1 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ HW1 ---
+[INFO] Copying 2 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ HW1 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.7:run (default-cli) < test-compile @ HW1 <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.7:run (default-cli) @ HW1 ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2025-11-03T13:47:19.561Z  INFO 47431 --- [HW1] [  restartedMain] tqs.samuelvinhas.HW1.Hw1Application      : Starting Hw1Application using Java 21.0.8 with PID 47431 (/home/samuel/UA/TQS/tqs-indiv-portfolio-samuelvinhas/HW1/backend/HW1/target/classes started by samuel in /home/samuel/UA/TQS/tqs-indiv-portfolio-samuelvinhas/HW1/backend/HW1)
+2025-11-03T13:47:19.563Z  INFO 47431 --- [HW1] [  restartedMain] tqs.samuelvinhas.HW1.Hw1Application      : No active profile set, falling back to 1 default profile: "default"
+2025-11-03T13:47:19.592Z  INFO 47431 --- [HW1] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03T13:47:19.592Z  INFO 47431 --- [HW1] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03T13:47:19.938Z  INFO 47431 --- [HW1] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-03T13:47:19.972Z  INFO 47431 --- [HW1] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2025-11-03T13:47:20.288Z  INFO 47431 --- [HW1] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-03T13:47:20.298Z  INFO 47431 --- [HW1] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-03T13:47:20.299Z  INFO 47431 --- [HW1] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-03T13:47:20.321Z  INFO 47431 --- [HW1] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-03T13:47:20.322Z  INFO 47431 --- [HW1] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 728 ms
+2025-11-03T13:47:20.424Z  INFO 47431 --- [HW1] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-03T13:47:20.451Z  INFO 47431 --- [HW1] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-03T13:47:20.473Z  INFO 47431 --- [HW1] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-03T13:47:20.631Z  INFO 47431 --- [HW1] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-03T13:47:20.648Z  INFO 47431 --- [HW1] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-03T13:47:20.749Z  INFO 47431 --- [HW1] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e795124
+2025-11-03T13:47:20.750Z  INFO 47431 --- [HW1] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-03T13:47:20.772Z  WARN 47431 --- [HW1] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-03T13:47:20.784Z  INFO 47431 --- [HW1] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-03T13:47:21.226Z  INFO 47431 --- [HW1] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-03T13:47:21.277Z  INFO 47431 --- [HW1] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T13:47:21.454Z  INFO 47431 --- [HW1] [  restartedMain] t.s.HW1.service.MunicipalityService      : MunicipalityService initialized
+2025-11-03T13:47:21.454Z  INFO 47431 --- [HW1] [  restartedMain] t.s.HW1.boundary.ZeroMonosController     : ZeroMonosController initialized
+2025-11-03T13:47:21.477Z  WARN 47431 --- [HW1] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-03T13:47:21.667Z  INFO 47431 --- [HW1] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-03T13:47:21.684Z  INFO 47431 --- [HW1] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-03T13:47:21.689Z  INFO 47431 --- [HW1] [  restartedMain] tqs.samuelvinhas.HW1.Hw1Application      : Started Hw1Application in 2.364 seconds (process running for 2.588)
+2025-11-03T13:49:55.296Z  INFO 47431 --- [HW1] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03T13:49:55.296Z  INFO 47431 --- [HW1] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-03T13:49:55.297Z  INFO 47431 --- [HW1] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-03T13:49:55.322Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:49:55.322Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:49:55.748Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:49:55.748Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:12.377Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:12.378Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:12.551Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:12.552Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:12.708Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:12.708Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:12.765Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:12.766Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:13.078Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:13.078Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:13.134Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:13.134Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:13.413Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:13.413Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:13.470Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:13.471Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:13.750Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:13.750Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:13.806Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:13.807Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:14.089Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:14.089Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:14.147Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:14.147Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:14.391Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:14.391Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:14.444Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:14.444Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:14.692Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:14.693Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:14.784Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:14.784Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:15.058Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:15.058Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:15.115Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:15.115Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:15.363Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:15.363Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:15.566Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:15.567Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:15.650Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:15.651Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:15.709Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:15.709Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:15.952Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:15.952Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:16.018Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:16.018Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:16.249Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:16.250Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:16.304Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:16.305Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:16.563Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:16.563Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:16.630Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:16.631Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:16.909Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:16.909Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:16.963Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:16.964Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:17.442Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:17.442Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:17.494Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:17.495Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:17.971Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:17.971Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:18.040Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:18.040Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:18.300Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:18.300Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:18.357Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:18.357Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:18.605Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:18.605Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:18.662Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:18.662Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:18.918Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:18.918Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:18.974Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:18.974Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:19.271Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:19.271Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:19.325Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:19.325Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:19.571Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:19.571Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:19.629Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:19.629Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:19.896Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:19.897Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:19.970Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:19.971Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:20.218Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:20.218Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:20.313Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:20.314Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:52:20.561Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:52:20.561Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:52:20.616Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:52:20.617Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:21.989Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:21.989Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:22.225Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:22.226Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:22.282Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:22.282Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:22.398Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:22.398Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:22.516Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:22.516Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:22.572Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:22.572Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:22.843Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:22.843Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:22.906Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:22.907Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:23.129Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:23.129Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:23.292Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:23.292Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:23.406Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:23.406Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:23.464Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:23.464Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:23.746Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:23.746Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:23.820Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:23.820Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:24.047Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:24.047Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:24.116Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:24.117Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:24.451Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:24.451Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:24.523Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:24.523Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:24.757Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:24.757Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:24.815Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:24.815Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:25.036Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:25.037Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:25.128Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:25.129Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:25.445Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:25.445Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:25.503Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:25.503Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:25.766Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:25.766Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:25.836Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:25.836Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:26.113Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:26.114Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:26.189Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:26.189Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:26.433Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:26.433Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:26.491Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:26.491Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:26.735Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:26.735Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:26.794Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:26.794Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:27.078Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:27.078Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:27.137Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:27.137Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:27.381Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:27.381Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:27.437Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:27.438Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:27.714Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:27.714Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:27.775Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:27.775Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:28.083Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:28.083Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:28.208Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:28.208Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:28.325Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:28.325Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:28.384Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:28.384Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:28.645Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:28.646Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:28.815Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:28.815Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:28.902Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:28.902Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:28.975Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:28.975Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:29.237Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:29.237Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:29.307Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:29.307Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:29.569Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:29.569Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:29.626Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:29.626Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:29.869Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:29.869Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:29.934Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:29.934Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:30.201Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:30.201Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:30.259Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:30.259Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:30.543Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:30.543Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:30.606Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:30.607Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:30.878Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:30.878Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:30.939Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:30.940Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:32.402Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:32.402Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:32.495Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:32.495Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:32.725Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:32.725Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:32.790Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:32.790Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:33.068Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:33.068Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:33.138Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:33.138Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:33.380Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:33.380Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:33.438Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:33.438Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:33.684Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:33.684Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:33.740Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:33.741Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:34.036Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:34.036Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:34.138Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:34.138Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:34.280Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:34.280Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:34.350Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:34.351Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:34.636Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:34.636Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:34.696Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:34.696Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:34.932Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:34.932Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:34.990Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:34.990Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:35.233Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:35.233Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:35.291Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:35.292Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:35.555Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:35.555Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:35.622Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:35.623Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:35.877Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:35.878Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:35.935Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:35.935Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:36.911Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:36.911Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:36.969Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:36.969Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:37.211Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:37.212Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:37.271Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:37.271Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:37.523Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:37.523Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:37.620Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:37.620Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:48.799Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:48.799Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:48.970Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:48.970Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:53:53.599Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:53.599Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T13:53:53.599Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:53.651Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:53.652Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T13:53:53.681Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings
+2025-11-03T13:53:55.270Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:53:55.270Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:53:55.336Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:53:55.336Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:55:09.542Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:55:09.542Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T13:55:09.543Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T13:55:09.545Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings
+2025-11-03T13:55:09.714Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:55:09.714Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:55:20.985Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:55:20.985Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:55:21.163Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:55:21.163Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:55:50.842Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:55:50.842Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T13:55:50.843Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T13:55:50.846Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings
+2025-11-03T13:55:51.011Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:55:51.012Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:57:39.640Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:57:39.640Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:57:40.885Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:57:40.885Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:58:53.740Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T13:58:53.740Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:58:53.741Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T13:58:53.744Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings
+2025-11-03T13:58:53.916Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:58:53.916Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T13:58:56.312Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T13:58:56.312Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T13:58:56.369Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T13:58:56.369Z  INFO 47431 --- [HW1] [nio-8080-exec-9] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:01:08.458Z  INFO 47431 --- [HW1] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-11-03T14:01:08.462Z  INFO 47431 --- [HW1] [       Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-03T14:01:08.465Z  INFO 47431 --- [HW1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-03T14:01:08.467Z  INFO 47431 --- [HW1] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T14:01:08.469Z  INFO 47431 --- [HW1] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-03T14:01:08.471Z  INFO 47431 --- [HW1] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2025-11-03T14:01:08.545Z  INFO 47431 --- [HW1] [  restartedMain] tqs.samuelvinhas.HW1.Hw1Application      : Starting Hw1Application using Java 21.0.8 with PID 47431 (/home/samuel/UA/TQS/tqs-indiv-portfolio-samuelvinhas/HW1/backend/HW1/target/classes started by samuel in /home/samuel/UA/TQS/tqs-indiv-portfolio-samuelvinhas/HW1/backend/HW1)
+2025-11-03T14:01:08.545Z  INFO 47431 --- [HW1] [  restartedMain] tqs.samuelvinhas.HW1.Hw1Application      : No active profile set, falling back to 1 default profile: "default"
+2025-11-03T14:01:08.657Z  INFO 47431 --- [HW1] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-03T14:01:08.661Z  INFO 47431 --- [HW1] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-11-03T14:01:08.736Z  INFO 47431 --- [HW1] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-03T14:01:08.738Z  INFO 47431 --- [HW1] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-03T14:01:08.738Z  INFO 47431 --- [HW1] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-03T14:01:08.744Z  INFO 47431 --- [HW1] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-03T14:01:08.744Z  INFO 47431 --- [HW1] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 196 ms
+2025-11-03T14:01:08.766Z  INFO 47431 --- [HW1] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-03T14:01:08.767Z  INFO 47431 --- [HW1] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-03T14:01:08.771Z  INFO 47431 --- [HW1] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-03T14:01:08.772Z  INFO 47431 --- [HW1] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-11-03T14:01:08.785Z  INFO 47431 --- [HW1] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@1aeae49f
+2025-11-03T14:01:08.786Z  INFO 47431 --- [HW1] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-11-03T14:01:08.788Z  WARN 47431 --- [HW1] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-03T14:01:08.789Z  INFO 47431 --- [HW1] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-03T14:01:08.817Z  INFO 47431 --- [HW1] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-03T14:01:08.833Z  INFO 47431 --- [HW1] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T14:01:08.882Z  INFO 47431 --- [HW1] [  restartedMain] t.s.HW1.service.MunicipalityService      : MunicipalityService initialized
+2025-11-03T14:01:08.883Z  INFO 47431 --- [HW1] [  restartedMain] t.s.HW1.boundary.ZeroMonosController     : ZeroMonosController initialized
+2025-11-03T14:01:08.894Z  WARN 47431 --- [HW1] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-03T14:01:08.954Z  INFO 47431 --- [HW1] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-03T14:01:08.960Z  INFO 47431 --- [HW1] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-03T14:01:08.963Z  INFO 47431 --- [HW1] [  restartedMain] tqs.samuelvinhas.HW1.Hw1Application      : Started Hw1Application in 0.438 seconds (process running for 829.861)
+2025-11-03T14:01:08.964Z  INFO 47431 --- [HW1] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-03T14:02:35.815Z  INFO 47431 --- [HW1] [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03T14:02:35.815Z  INFO 47431 --- [HW1] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-03T14:02:35.816Z  INFO 47431 --- [HW1] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-03T14:02:35.817Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:02:35.817Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T14:02:35.817Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T14:02:35.822Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings
+2025-11-03T14:02:35.994Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:02:35.994Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:02:36.882Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:02:36.882Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T14:02:36.950Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:02:36.950Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:02:37.996Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:02:37.996Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T14:02:37.996Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T14:02:37.999Z  INFO 47431 --- [HW1] [nio-8080-exec-5] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings
+2025-11-03T14:02:38.049Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:02:38.049Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:05:29.885Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:05:29.886Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T14:05:30.607Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:05:30.607Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:09:11.559Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:09:11.559Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T14:09:11.559Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T14:09:11.562Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings
+2025-11-03T14:09:11.731Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:09:11.731Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:09:13.289Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:09:13.289Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T14:09:13.341Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:09:13.341Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:10:36.565Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T14:10:36.565Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:10:36.566Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T14:10:36.569Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings
+2025-11-03T14:10:36.731Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:10:36.731Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:10:40.521Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:10:40.521Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T14:10:40.572Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:10:40.572Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:15:24.138Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T14:15:24.140Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings
+2025-11-03T14:16:11.458Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:16:11.458Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T14:16:11.657Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:16:11.657Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:16:35.471Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings/municipality/Abrantes - Fetching bookings by municipality
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0 
+    where
+        sr1_0.municipality=?
+2025-11-03T14:16:35.494Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings for municipality: Abrantes
+2025-11-03T14:17:21.349Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings/municipality/Estremoz - Fetching bookings by municipality
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0 
+    where
+        sr1_0.municipality=?
+2025-11-03T14:17:21.351Z  INFO 47431 --- [HW1] [nio-8080-exec-3] t.s.HW1.boundary.ZeroMonosController     : Found 0 bookings for municipality: Estremoz
+2025-11-03T14:17:25.513Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : POST /api/bookings - Creating new booking for municipality: Estremoz
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0 
+    where
+        sr1_0.municipality=? 
+        and sr1_0.time_slot=?
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0 
+    where
+        sr1_0.token=?
+Hibernate: 
+    insert 
+    into
+        service_requests
+        (address, date, item_description, municipality, state, time_slot, token) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2025-11-03T14:17:25.550Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : Booking created successfully with token: 7dea8745-a73f-426f-9936-0d6a7f675bd2
+2025-11-03T14:17:35.504Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings/7dea8745-a73f-426f-9936-0d6a7f675bd2 - Fetching booking
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0 
+    where
+        sr1_0.token=?
+2025-11-03T14:17:35.509Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Booking found: 7dea8745-a73f-426f-9936-0d6a7f675bd2
+2025-11-03T14:18:01.105Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:18:01.105Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T14:18:01.105Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T14:18:01.110Z  INFO 47431 --- [HW1] [nio-8080-exec-8] t.s.HW1.boundary.ZeroMonosController     : Found 1 bookings
+2025-11-03T14:18:02.851Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:18:02.851Z  INFO 47431 --- [HW1] [nio-8080-exec-6] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T14:18:20.646Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : PUT /api/bookings/7dea8745-a73f-426f-9936-0d6a7f675bd2 - Updating booking
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0 
+    where
+        sr1_0.token=?
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0 
+    where
+        sr1_0.municipality=? 
+        and sr1_0.time_slot=?
+Hibernate: 
+    update
+        service_requests 
+    set
+        address=?,
+        date=?,
+        item_description=?,
+        municipality=?,
+        state=?,
+        time_slot=? 
+    where
+        token=?
+2025-11-03T14:18:20.661Z  INFO 47431 --- [HW1] [nio-8080-exec-1] t.s.HW1.boundary.ZeroMonosController     : Booking updated successfully: 7dea8745-a73f-426f-9936-0d6a7f675bd2
+2025-11-03T14:18:20.667Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T14:18:20.669Z  INFO 47431 --- [HW1] [io-8080-exec-10] t.s.HW1.boundary.ZeroMonosController     : Found 1 bookings
+2025-11-03T14:18:37.916Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T14:18:37.916Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+2025-11-03T14:18:38.513Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T14:18:38.513Z  INFO 47431 --- [HW1] [nio-8080-exec-2] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T17:04:17.257Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : GET /api/bookings - Fetching all bookings
+2025-11-03T17:04:17.257Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : GET /api/municipalities - Fetching municipalities
+2025-11-03T17:04:17.257Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Fetching municipalities from external API: https://json.geoapi.pt/municipios
+Hibernate: 
+    select
+        sr1_0.token,
+        sr1_0.address,
+        sr1_0.date,
+        sr1_0.item_description,
+        sr1_0.municipality,
+        sr1_0.state,
+        sr1_0.time_slot 
+    from
+        service_requests sr1_0
+2025-11-03T17:04:17.264Z  INFO 47431 --- [HW1] [nio-8080-exec-7] t.s.HW1.boundary.ZeroMonosController     : Found 1 bookings
+2025-11-03T17:04:17.428Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.service.MunicipalityService      : Successfully fetched 308 municipalities
+2025-11-03T17:04:17.428Z  INFO 47431 --- [HW1] [nio-8080-exec-4] t.s.HW1.boundary.ZeroMonosController     : Successfully fetched 308 municipalities
+2025-11-03T18:34:21.231Z  INFO 47431 --- [HW1] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-03T18:34:21.236Z  INFO 47431 --- [HW1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-03T18:34:21.238Z  INFO 47431 --- [HW1] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T18:34:21.238Z  INFO 47431 --- [HW1] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-11-03T18:34:21.239Z  INFO 47431 --- [HW1] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
